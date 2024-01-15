@@ -4,6 +4,7 @@ This has github action which will
 
 - Build Docker container
 - Push it to docker hub
+<<<<<<< HEAD
 - Then run container on ec2 instance lauched on aws
 
 ## EC2 Instance Config Script
@@ -33,3 +34,6 @@ usermod -aG docker ubuntu
 
 reboot
 ```
+=======
+- Run container on EC2 instance
+>>>>>>> 47c63128842d798e5ab609809eaba2b552161003
