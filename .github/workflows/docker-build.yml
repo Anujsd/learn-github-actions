@@ -43,4 +43,4 @@ jobs:
             docker pull anujdube/github-actions-learn:${{ github.sha }}
             docker stop learn-backend || true
             docker rm learn-backend || true
-            docker run -d --name learn-backend -p 80:4040 -e "${{ secrets.DOCKER_PORT }}" -e "${{ secrets.DOCKER_MONGO_URL }}" anujdube/github-actions-learn:${{ github.sha }}
+            docker run -d --name learn-backend -p 80:4040 -e "PORT=${{ secrets.DOCKER_PORT }}" -e "MONGODB_URL=${{ secrets.DOCKER_MONGO_URL }}" anujdube/github-actions-learn:${{ github.sha }}
