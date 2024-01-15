@@ -25,9 +25,9 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: ./backend
           file: ./backend/Dockerfile # Change this to the path of your Dockerfile
           push: true
           tags: |
-            your-docker-hub-username/your-repo-name:latest
-            your-docker-hub-username/your-repo-name:${{ github.sha }}
+            anujdube/github-actions-learn:latest
+            anujdube/github-actions-learn:${{ github.sha }}
