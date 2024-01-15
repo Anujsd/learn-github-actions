@@ -23,7 +23,9 @@ app.use(cors());
 // );
 
 app.get('/', (req, res) => {
-  return res.status(222).send('first message');
+  return res
+    .status(222)
+    .send('This is Demo Site, Go to /books to get books data');
 });
 
 app.use('/books', booksRoute);
