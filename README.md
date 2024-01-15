@@ -4,10 +4,13 @@ This has github action which will
 
 - Build Docker container
 - Push it to docker hub
-<<<<<<< HEAD
-- Then run container on ec2 instance lauched on aws
+- Run container on EC2 instance
 
-## EC2 Instance Config Script
+### EC2 Instance Configuration Script
+
+You can add below script in user data for configuring your ec2 instance.
+
+Script installs Docker.
 
 ```
 #!/bin/bash
@@ -34,6 +37,3 @@ usermod -aG docker ubuntu
 
 reboot
 ```
-=======
-- Run container on EC2 instance
->>>>>>> 47c63128842d798e5ab609809eaba2b552161003
