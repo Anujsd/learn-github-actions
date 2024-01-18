@@ -35,9 +35,9 @@ jobs:
       - name: Get and set EC2 Public IP
         id: set_ec2_public_ip
         run: |
-          EC2_PUBLIC_IP=$(terraform output -raw public_ip)
+          EC2_PUBLIC_IP=$(terraform output public_ip)
           echo "EC2_PUBLIC_IP=$EC2_PUBLIC_IP" >> $GITHUB_ENV
-          echo "::set-output name=ec2_public_ip::${EC2_PUBLIC_IP}"
+          echo "::set-output name=ec2_public_ip::$EC2_PUBLIC_IP"
 
       - name: Update GitHub Secret
         run: |
