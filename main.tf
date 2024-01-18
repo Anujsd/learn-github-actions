@@ -8,10 +8,15 @@ data "aws_ami" "app_ami" {
   }
 }
 
-resource "aws_instance" "myec2_2" {
+resource "aws_instance" "myec2" {
   ami           = data.aws_ami.app_ami.id
   instance_type = "t2.micro"
+  key_name = "github-pair"
   tags          = {
     Name = "cicdInstance"
   }
+}
+
+output "public_ip" {
+  value = aws_instance.myec2.public_ip
 }
