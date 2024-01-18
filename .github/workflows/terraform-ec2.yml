@@ -3,10 +3,11 @@ name: Terraform AWS EC2
 on:
   push:
     branches:
-      - terraform
+      - main
 
 jobs:
   terraform:
+    if: contains(github.event.head_commit.message, 'terraform')
     runs-on: ubuntu-latest
 
     steps:
