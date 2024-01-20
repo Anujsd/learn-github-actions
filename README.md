@@ -1,6 +1,6 @@
 # Learn Github Action
 
-### Github Actions does following tasks
+## Github Actions does following tasks
 
 1. When Commit message contains [terraform]
 
