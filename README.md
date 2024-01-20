@@ -2,6 +2,8 @@
 
 ## Github Actions does following tasks
 
+#
+
 1. When Commit message contains [terraform]
 
    - Ec2 instance with t2.micro type will be created
