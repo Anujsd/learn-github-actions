@@ -4,14 +4,14 @@ Github Action does following tasks
 
 1. When Commit message contains [terraform]
 
-- Ec2 instance with t2.micro type will be created
-- Docker will be installed on it
+   - Ec2 instance with t2.micro type will be created
+   - Docker will be installed on it
 
 2. When Commit message contains [build]
 
-- Github Actions will Build Docker container
-- Push it to docker hub
-- Github Action will then Run container on EC2 instance
+   - Github Actions will Build Docker container
+   - Push it to docker hub
+   - Github Action will then Run container on EC2 instance
 
 ### EC2 Instance Configuration Script
 
